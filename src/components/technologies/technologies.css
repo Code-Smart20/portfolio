@@ -1,0 +1,81 @@
+.technology__container {
+    display: grid;
+    grid-template-columns: 80%;
+    gap: 2rem;
+    margin: 0 auto;
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: center;
+}
+
+.technology__container>div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    width: 100%;
+
+}
+
+.technology__container>div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.technology__container>div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.technology__content {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: 2px solid white;
+        gap: 5rem;
+
+
+}
+
+.technology__details {
+    display: flex;
+    gap: 1rem;
+    border: 2px solid green;
+}
+
+.technology__details-icon {
+    margin-top: 6px;
+    color: var(--color-primary);
+
+}
+
+/*************meddian querries*******/
+@media screen and (max-width:1024px) {
+    .technology__container {
+        grid-template-columns: 1fr;
+    }
+
+    .technology__container>div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    
+}
+
+
+@media screen and (max-width:600px) {
+
+    .technology__container {
+        gap: 1rem;
+    }
+
+    .technology__container>div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}

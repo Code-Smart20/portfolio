@@ -1,12 +1,13 @@
 import React from 'react';
-import profile from '../../Assets/profile.jpg';
+import profile1 from '../../Assets/profile1.jpg';
 import "./about.css";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import {VscFolderLibrary} from "react-icons/vsc"
 
 
-function About() {
+function About()
+{
 
   return (
     <section id='about'>
@@ -16,7 +17,7 @@ function About() {
       <div className="container about__container">
         
         <div className="about__me">
-           <img src={profile} className='about__me-image' height="100%" alt="my image coding" />
+           <img src={profile1} className='about__me-image' height="100%" alt="my image coding" />
         </div>
        
        <div className="about__content">
@@ -43,7 +44,11 @@ function About() {
 
           </div>
 
-          <p>Hello, i am Nwachukwu priNce Ikedinachi Front End Wrb Developer From Nigeria</p>
+          <p>
+            Hello, i am Nwachukwu prince a Front End Web Developer.Motivated,solution driven,
+            and detail Oriented person, with a passion for creating responsive and user-friendly web applications.
+            Currently pursuing a Diploma in Back-End with Alx.
+          </p>
           <a href="#contact" className='btn'>Lets Talk</a>
        </div>
        </div>

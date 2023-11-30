@@ -38,18 +38,7 @@ const Technologies = () => {
                       <article className='technology__details'>
                           {/****check icon should come here */}
                           <div>
-                              <h4>JAvAvscript</h4>
-                              <small className='text-align'>
-                                  Experienced
-                              </small>
-
-                          </div>
-
-                      </article>
-                      <article className='technology__details'>
-                          {/****check icon should come here */}
-                          <div>
-                              <h4>HTML</h4>
+                              <h4>JAVASCRIPT</h4>
                               <small className='text-align'>
                                   Experienced
                               </small>
@@ -71,7 +60,38 @@ const Technologies = () => {
                       <article className='technology__details'>
                           {/****check icon should come here */}
                           <div>
-                              <h4>HTML</h4>
+                              <h4>TYPESCRIPT</h4>
+                              <small className='text-align'>
+                                  Experienced
+                              </small>
+
+                          </div>
+
+                      </article>
+                      <article className='technology__details'>
+                          {/****check icon should come here */}
+                          <div>
+                              <h4>REDUX-TOOLKIT</h4>
+                              <small className='text-align'>
+                                  Experienced
+                              </small>
+
+                          </div>
+                      </article>
+                      <article className='technology__details'>
+                          {/****check icon should come here */}
+                          <div>
+                              <h4>MATERIAL-UI</h4>
+                              <small className='text-align'>
+                                  Experienced
+                              </small>
+
+                          </div>
+                      </article>
+                      <article className='technology__details'>
+                          {/****check icon should come here */}
+                          <div>
+                              <h4>FIREBASE</h4>
                               <small className='text-align'>
                                   Experienced
                               </small>

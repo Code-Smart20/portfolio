@@ -1,7 +1,7 @@
 header{
     height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;   
+    padding-top: 4rem;
+    overflow: hidden;  
 }
 
 .header__container{
@@ -38,16 +38,49 @@ header{
 
 .me{
     background: linear-gradient(var(--color-primary,transparent));
-    width: 15rem;
+    width: 16rem;
+    height: 16rem;
+    overflow: hidden;
+    margin: 0 auto;
+    object-fit:contain;
     aspect-ratio: 1/1;
-    position: absolute;
+    border-radius: 100%;
+    border: 20px solid var(--color-primary);
+    margin-top: 4rem;
+    transition: var(--transition);
+    position: relative;
+
+
+
+   /* position: absolute;
     left: 50%;
     transform: translateX(-7.5rem);
     margin-top: 2rem;
     border-radius: 12rem 12rem 0 0;
     overflow-inline: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
+    transition: var(--transition);
+    border-radius: 75%;
+    border: 2px solid green;
+    */
     
+}
+
+.fade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(0,0,0,0.2);
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+}
+
+.me:hover, .me:hover .fade{
+    border: 5px solid white;
+    background-color: rgba(0, 0, 0,0.75);
+
+
 }
 
 .scroll__down{
@@ -62,17 +95,23 @@ header{
 /****** media querries *******/
 @media screen and (max-width:1024px){
 
+    .container{
+        width: var(--container-width-md);
+    }
+
     header{
         height: 100vh;
     }
-    .me{
-        margin-top: 0.45rem;
-    }
+ 
 }
 
 /****** media querries *******/
 
 @media screen and (max-width:600px){
+
+    .container{
+        width: var(--container-width-sm);
+    }
 
     header{
 
@@ -82,4 +121,11 @@ header{
    .header__socials{
     display: none;
    }
+
+   .me{
+   margin-top:2rem;
+ }
+ .scroll__down{
+    bottom: 8.5rem;
+ }
  }

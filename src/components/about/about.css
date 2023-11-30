@@ -10,8 +10,7 @@
     border-radius: 2rem;
     background: linear-gradient(45deg,transparent,var(--color-primary),transparent);
     display: grid;
-    place-items: center;
-    
+    place-items: center;   
 }
 
 .about__me-image{
@@ -71,6 +70,9 @@
 /************ media querries***************/
 
 @media screen and (max-width:1024px){
+    .container{
+        width: var(--container-width-md);
+    }
     .about__container{
         grid-template-columns: 1fr;
         gap: 0;
@@ -96,6 +98,9 @@
 
 
 @media screen and (max-width:600px){
+    .container{
+        width: var(--container-width-sm);
+    }
       .about__me{
         width: 30%;
         margin: 0 auto 3rem;
@@ -108,8 +113,6 @@
 
       .about__content{
         text-align: center;
-      }
-
-      
+      }    
    
  }

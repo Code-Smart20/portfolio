@@ -2,7 +2,7 @@
 import './header.css'
 import Cta from './Cta'
 import HeaderSocials from './HeaderSocials'
-import profile from "./../../Assets/profile.jpg"
+import profile3 from "./../../Assets/profile3.jpg"
  
 
 const Header = () => {
@@ -19,7 +19,8 @@ const Header = () => {
             <Cta/>
             
             <div className="me">
-              <img src={profile} alt="profilepics" />
+              <img src={profile3} alt="profilepics" />
+               <div className="fade"></div>
             </div>
             
           <a href="#contact" className='scroll__down'>Scroll Down</a>

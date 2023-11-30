@@ -1,21 +1,17 @@
+#technology{
+    width: 100%;
+}
 .technology__container {
-    display: grid;
-    grid-template-columns: 80%;
-    gap: 2rem;
-    margin: 0 auto;
-    border: 2px solid yellow;
-    display: flex;
-    justify-content: center;
+  display:grid;
+  grid-template-columns:repeat(1fr,1fr);
 }
 
-.technology__container>div {
-    background: var(--color-bg-variant);
+.technology__container > div {
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
     width: 100%;
-
 }
 
 .technology__container>div:hover {
@@ -31,19 +27,34 @@
 }
 
 .technology__content {
-        padding: 1rem;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        border: 2px solid white;
-        gap: 5rem;
-
+        grid-template-columns: 50% 50%;
 
 }
 
 .technology__details {
     display: flex;
-    gap: 1rem;
-    border: 2px solid green;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 4rem;
+    width: 100%;
+}
+
+.technology__details > div{
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+    padding: 2rem;
+    min-width: 300px;
+}
+
+.technology__details > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
 }
 
 .technology__details-icon {
@@ -54,27 +65,30 @@
 
 /*************meddian querries*******/
 @media screen and (max-width:1024px) {
-    .technology__container {
-        grid-template-columns: 1fr;
+
+    .container{
+        width: var(--container-width-md);
     }
 
-    .technology__container>div {
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
+    .technology__content{
+        grid-template-columns: 100%;
     }
-
-    
+    .technology__details {
+        grid-template-columns: 100%;
+    }   
 }
 
-
 @media screen and (max-width:600px) {
+
+    .container{
+        width: var(--container-width-sm);
+    }
 
     .technology__container {
         gap: 1rem;
     }
 
-    .technology__container>div {
+    .technology__container > div {
         width: 100%;
         padding: 2rem 1rem;
     }

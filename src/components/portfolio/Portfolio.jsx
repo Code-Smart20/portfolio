@@ -2,8 +2,6 @@ import React from 'react'
 import profile from '../../Assets/profile.jpg'
 import "./portfolio.css"
 
-
-
 const Portfolio = () => {
   return (
    <section id='portfolio'>

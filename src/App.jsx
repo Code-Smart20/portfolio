@@ -7,7 +7,6 @@ import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Technologies from './components/technologies/Technologies'
 
-
 const App = () => {
   return (
     <div className='app'>

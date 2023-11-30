@@ -1,6 +1,6 @@
 import React from 'react'
 import "./contact.css"
-import profile from '../../Assets/profile.jpg'
+import profile1 from '../../Assets/profile1.jpg'
 import { MdOutlineEmail } from "react-icons/md"
 import { BsWhatsapp } from 'react-icons/bs'
 
@@ -10,7 +10,7 @@ const Contact = () => {
       <h5>Get In touch</h5>
       <h2>Contact Me</h2>
       <div className="contact__main">
-        <img className='image' src={profile } alt="" />
+        <img className='image' src={profile1 } alt="" />
         <div className="fadebg">
 
         </div>

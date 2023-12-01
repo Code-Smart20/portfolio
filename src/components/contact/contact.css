@@ -2,10 +2,9 @@
     position: relative;
     width: 100%;
     height: fit-content;
-    overflow-y: hidden;
-    
-    
+    overflow-y: hidden;   
 }
+
 .contact__main{
     position: relative;
     width: 100%;
@@ -22,7 +21,7 @@
     display: grid;
     grid-template-columns: 38% 50%;
     gap: 12%;
-    margin-bottom: 10rem;
+    padding-bottom:5rem;
     position: relative;
 
 }
@@ -101,6 +100,10 @@ input,textarea{
 /***media screen ****/
 
 @media screen and (max-width:1024px){
+
+    #contact{
+        padding-bottom: 0;
+    }
 
     .container.contact__container{
         grid-template-columns: 1fr;

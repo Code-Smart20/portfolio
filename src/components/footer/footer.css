@@ -1,0 +1,55 @@
+.footer{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    width:100%;
+    
+}
+
+.footer .footer__logo{
+    font-size:2rem;
+    font-weight:900;
+}
+
+.footer .perma__links,.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-top: 5rem;
+}
+
+.footer .perma__links li,.socials{
+    margin-right: 3rem;
+    font-weight: 600;
+}
+
+.footer .socials{
+    margin: 0 auto;
+    max-width: 30%;
+    
+}
+
+.footer .socials a{
+    margin:0 5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+
+/*************meddian querries*******/
+@media screen and (max-width:1024px) {
+
+    .container {
+        width: var(--container-width-md);
+    }
+
+    
+}
+
+@media screen and (max-width:600px) {
+
+    .container {
+        width: var(--container-width-sm);
+    }
+
+}

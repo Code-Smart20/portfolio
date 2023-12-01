@@ -8,7 +8,7 @@ const Portfolio = () => {
     <h5>My recent Works</h5>
     <h2>Portfolio</h2>
 
-    <div className="container portfolio__container">
+    <div className="portfolio__container container">
 
       <article className="portfolio__item">
 
